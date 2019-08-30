@@ -7,36 +7,60 @@
     <body>
         <p>Welcome to (name) pick your pizza and we will deliver it to you right to your door!</p>
 
+        <form id="pizzas">
+
+        <h3> Cheese </h3>
+
         <input type="image" src="cheese.jpg" name="pizzaChoice" height ="150" width ="150" id="pizza1" />
-        <select>
-            <option value="toopping">-</option>
-            <option value="topping1">-</option>
-            <option value="topping2">-</option>
-            <option value="topping3">-</option>
-        </select>
+        <div id=hiddenToppings>
 
+            Toppings:
+            <select>
+                <option value="toopping">Extra Cheese</option>
+                <option value="topping1">Mushrooms</option>
+                <option value="topping2">Pineapple</option>
+                <option value="topping3">Black olives</option>
+            </select><br>
+            Size:
+            <select>
+                <option value="size">Small</option>
+                <option value="size">Large</option>
+        </select>
+        </div>
+
+        <h3> Hawaiian </h3>
         <input type="image" src="hawaiian.jpg" name="pizzaChoice" id="pizza2" height = "150" width ="150" />
+        <div id=hiddenToppings>
+            Toppings:
         <select>
-            <option value="topping1">topping1</option>
-            <option value="topping1">-</option>
-            <option value="topping2">-/option>
-            <option value="topping3">-</option>
+            <option value="toopping">Extra Cheese</option>
+            <option value="topping1">Mushrooms</option>
+            <option value="topping2">Pineapple</option>
+            <option value="topping3">Black olives</option>
+        </select><br>
+            Size:
+            <select>
+            <option value="size">Small</option>
+            <option value="size">Large</option>
         </select>
+        </div>
+
+        <h3>Veggie</h3>
         <input type="image" src="veggie.jpg" name="pizzaChoice" id="pizza3" height="150" width="150" />
+        <div id=hiddenToppings>
+            Toppings:
         <select>
-            <option value="toopping">-</option>
-            <option value="topping1">-</option>
-            <option value="topping2">-</option>
-            <option value="topping3">-</option>
+            <option value="toopping">Extra Cheese</option>
+            <option value="topping1">Mushrooms</option>
+            <option value="topping2">Pineapple</option>
+            <option value="topping3">Black olives</option>
+        </select><br>
+            Size:
+            <select>
+            <option value="size">Small</option>
+            <option value="size">Large</option>
         </select>
-
-        add toppings
-
-        //cheese
-
-        //pepperoni
-
-        //veggie
-
+        </div>
+    </form>
     </body>
 </html>
