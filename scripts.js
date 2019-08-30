@@ -49,4 +49,4 @@ Pizza.prototype.extraCost = function() {
     this.cost++}
 
 var cheese = new Pizza(cheeseTopping, cheeseSize, 10)
-console.log(cheese)
+console.log(cheese) g
