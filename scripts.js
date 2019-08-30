@@ -32,8 +32,16 @@ $("form#pizzas").submit(function(event) {
     console.log(veggieTopping)
     //VEGGIE SIZE SELECT
     var veggieSize= $("#veggieSize option:selected").text();
-    console.log(veggieSize)
+    //console.log(veggieSize)
 
+    var cheese = new Pizza(cheeseTopping, cheeseSize, 10)
+    //console.log(cheese)
+
+    var hawaiian = new Pizza (hawaiianTopping, hawaiianSize, 10)
+    //console.log(hawaiian)
+
+    var veggie = new Pizza(veggieTopping, veggieSize, 10)
+    console.log(veggie)
 });
 
 });
@@ -47,6 +55,3 @@ $("form#pizzas").submit(function(event) {
 
 Pizza.prototype.extraCost = function() {
     this.cost++}
-
-var cheese = new Pizza(cheeseTopping, cheeseSize, 10)
-console.log(cheese) g
