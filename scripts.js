@@ -14,10 +14,10 @@
     });
 
     //bussiness logic
-    $("")
-function getValue() {
-    var selectedOptionForPizza1 = $("pizza1").val();
-    console.log(selectedOptionForPizza1)
-}
+$("form#pizzas").submit(function(event) {
+        event.preventDefault();
+    var cheeseTopping= $("#cheeseTopp option:selected").val();
+    console.log(cheeseTopping)
+});
 
 });
