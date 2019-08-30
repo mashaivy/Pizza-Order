@@ -13,7 +13,6 @@
     $("#veggieToppings").show();
     });
 
-    //bussiness logic
 $("form#pizzas").submit(function(event) {
         event.preventDefault();
         //CHEESE TOPPING SELECT
@@ -31,11 +30,23 @@ $("form#pizzas").submit(function(event) {
     //Veggie TOPPING select
     var veggieTopping= $("#veggieTopp option:selected").text();
     console.log(veggieTopping)
-    //VEGGIE TOPPING SELECT
+    //VEGGIE SIZE SELECT
     var veggieSize= $("#veggieSize option:selected").text();
     console.log(veggieSize)
 
-
 });
 
 });
+
+//bussiness logic
+    function Pizza (toppings, size, cost){
+    this.toppings = toppings;
+    this.size = size;
+    this.cost = cost;
+}
+
+Pizza.prototype.extraCost = function() {
+    this.cost++}
+
+var cheese = new Pizza(cheeseTopping, cheeseSize, 10)
+console.log(cheese)
