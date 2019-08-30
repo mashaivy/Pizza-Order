@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html >
     <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="scripts.js"></script>
+        <link rel="stylesheet" href="styles.css">
         <meta charset="utf-8">
-        <title></title>
+        <title>Pizza Website Name</title>
     </head>
     <body>
         <p>Welcome to (name) pick your pizza and we will deliver it to you right to your door!</p>
@@ -11,8 +15,8 @@
 
         <h3> Cheese </h3>
 
-        <input type="image" src="cheese.jpg" name="pizzaChoice" height ="150" width ="150" id="pizza1" />
-        <div id=hiddenToppings>
+         <input type="image" src="cheese.jpg" name="pizzaChoice" height ="150" width ="150" id="pizza1" />
+        <div id="cheeseToppings">
 
             Toppings:
             <select>
@@ -20,6 +24,8 @@
                 <option value="topping1">Mushrooms</option>
                 <option value="topping2">Pineapple</option>
                 <option value="topping3">Black olives</option>
+                <option value="topping4">Red onions</option>
+                <option value="topping5">Green Peppers</option>
             </select><br>
             Size:
             <select>
@@ -29,14 +35,16 @@
         </div>
 
         <h3> Hawaiian </h3>
-        <input type="image" src="hawaiian.jpg" name="pizzaChoice" id="pizza2" height = "150" width ="150" />
-        <div id=hiddenToppings>
+        <input type="image" src="hawaiian.jpg" name="pizzaChoice" id="pizza2" height = "150" width ="150" id="pizza2"/>
+        <div id="hawaiianToppings">
             Toppings:
         <select>
             <option value="toopping">Extra Cheese</option>
             <option value="topping1">Mushrooms</option>
             <option value="topping2">Pineapple</option>
             <option value="topping3">Black olives</option>
+            <option value="topping4">Red onions</option>
+            <option value="topping5">Green Peppers</option>
         </select><br>
             Size:
             <select>
@@ -46,14 +54,16 @@
         </div>
 
         <h3>Veggie</h3>
-        <input type="image" src="veggie.jpg" name="pizzaChoice" id="pizza3" height="150" width="150" />
-        <div id=hiddenToppings>
+        <input type="image" src="veggie.jpg" name="pizzaChoice" id="pizza3" height="150" width="150" id="pizza3"/>
+        <div id="veggieToppings">
             Toppings:
         <select>
             <option value="toopping">Extra Cheese</option>
             <option value="topping1">Mushrooms</option>
             <option value="topping2">Pineapple</option>
             <option value="topping3">Black olives</option>
+            <option value="topping4">Red onions</option>
+            <option value="topping5">Green Peppers</option>
         </select><br>
             Size:
             <select>
@@ -61,6 +71,7 @@
             <option value="size">Large</option>
         </select>
         </div>
+        <button type="submit"> Order! </button>
     </form>
     </body>
 </html>
