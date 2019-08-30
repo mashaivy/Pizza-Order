@@ -1,4 +1,5 @@
-$(document).ready(function() {
+//user int
+    $(document).ready(function() {
     $("input#pizza1").click(function(event){
         event.preventDefault();
         $("#cheeseToppings").show();
@@ -12,6 +13,11 @@ $(document).ready(function() {
     $("#veggieToppings").show();
     });
 
-
+    //bussiness logic
+    $("")
+function getValue() {
+    var selectedOptionForPizza1 = $("pizza1").val();
+    console.log(selectedOptionForPizza1)
+}
 
 });
