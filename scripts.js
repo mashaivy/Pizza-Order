@@ -16,8 +16,26 @@
     //bussiness logic
 $("form#pizzas").submit(function(event) {
         event.preventDefault();
-    var cheeseTopping= $("#cheeseTopp option:selected").val();
-    console.log(cheeseTopping)
+        //CHEESE TOPPING SELECT
+        var cheeseTopping= $("#cheeseTopp option:selected").text();
+        console.log(cheeseTopping)
+        //CHEESE SIZE SELECT
+    var cheeseSize= $("#cheeseSize option:selected").text();
+    console.log(cheeseSize)
+    //HAWAIIAN TOPPING SELECT
+    var hawaiianTopping= $("#hawaiianTopp option:selected").text();
+    console.log(hawaiianTopping)
+    //HAWAIIAN SIZE SELECT
+    var hawaiianSize= $("#hawaiianSize option:selected").text();
+    console.log(hawaiianSize)
+    //Veggie TOPPING select
+    var veggieTopping= $("#veggieTopp option:selected").text();
+    console.log(veggieTopping)
+    //VEGGIE TOPPING SELECT
+    var veggieSize= $("#veggieSize option:selected").text();
+    console.log(veggieSize)
+
+
 });
 
 });
