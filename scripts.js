@@ -17,34 +17,41 @@ $("form#pizzas").submit(function(event) {
         event.preventDefault();
         //CHEESE TOPPING SELECT
         var cheeseTopping= $("#cheeseTopp option:selected").text();
-        console.log(cheeseTopping)
+        //console.log(cheeseTopping)
         //CHEESE SIZE SELECT
     var cheeseSize= $("#cheeseSize option:selected").text();
-    console.log(cheeseSize)
+//    console.log(cheeseSize)
     //HAWAIIAN TOPPING SELECT
     var hawaiianTopping= $("#hawaiianTopp option:selected").text();
-    console.log(hawaiianTopping)
+//    console.log(hawaiianTopping)
     //HAWAIIAN SIZE SELECT
     var hawaiianSize= $("#hawaiianSize option:selected").text();
-    console.log(hawaiianSize)
+    //console.log(hawaiianSize)
     //Veggie TOPPING select
     var veggieTopping= $("#veggieTopp option:selected").text();
-    console.log(veggieTopping)
+//    console.log(veggieTopping)
     //VEGGIE SIZE SELECT
     var veggieSize= $("#veggieSize option:selected").text();
     //console.log(veggieSize)
 
     var cheese = new Pizza(cheeseTopping, cheeseSize, 10)
+    if (cheeseTopping = "topping") {
+        cheese.extraCost() }
+        //console.log(cheese)
     //console.log(cheese)
 
     var hawaiian = new Pizza (hawaiianTopping, hawaiianSize, 10)
-    //console.log(hawaiian)
+    console.log(hawaiian)
 
     var veggie = new Pizza(veggieTopping, veggieSize, 10)
-    console.log(veggie)
-});
+    //console.log(veggie)
+
+
+    });
 
 });
+
+
 
 //bussiness logic
     function Pizza (toppings, size, cost){
