@@ -34,31 +34,49 @@ $("form#pizzas").submit(function(event) {
     var veggieSize= $("#veggieSize option:selected").text();
     //console.log(veggieSize)
 
+
+
+//bussness
     var cheese = new Pizza(cheeseTopping, cheeseSize, 10)
-    if (cheeseTopping = "topping") {
-        cheese.extraCost() }
         //console.log(cheese)
     //console.log(cheese)
 
     var hawaiian = new Pizza (hawaiianTopping, hawaiianSize, 10)
-    console.log(hawaiian)
+    //console.log(hawaiian)
 
     var veggie = new Pizza(veggieTopping, veggieSize, 10)
     //console.log(veggie)
 
-
-    });
-
-});
-
-
-
-//bussiness logic
     function Pizza (toppings, size, cost){
-    this.toppings = toppings;
-    this.size = size;
-    this.cost = cost;
-}
+        this.toppings = toppings;
+        this.size = size;
+        this.cost = cost;
 
-Pizza.prototype.extraCost = function() {
-    this.cost++}
+    };
+
+        Pizza.prototype.extraCost = function() {
+            this.cost+=2}
+            //large size calculator
+            if (cheeseTopping === "Extra Cheese" ) {
+            cheese.extraCost() }
+
+            if (hawaiianTopping === "Extra Cheese") {
+                hawaiian.extraCost() }
+
+            if (veggieTopping === "Extra Cheese") {
+                veggie.extraCost() }
+                //console.log(veggie)
+                //extra toppings calculator
+            if (cheeseSize === "Large" ) {
+               cheese.cost+=4 }
+               console.log(cheese)
+
+            if (hawaiianSize === "Large" ) {
+                hawaiian.cost+=4 }
+                console.log(hawaiian)
+
+            if (veggieSize === "Large" ) {
+                veggie.cost+=4 }
+            //    console.log(veggie)
+            })
+});
