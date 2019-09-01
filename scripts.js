@@ -1,3 +1,4 @@
+var resultArray = [];
 //user int
     $(document).ready(function() {
     $("input#pizza1").click(function(event){
@@ -12,6 +13,8 @@
     event.preventDefault();
     $("#veggieToppings").show();
     });
+
+
 
 $("form#pizzas").submit(function(event) {
         event.preventDefault();
@@ -57,6 +60,7 @@ $("form#pizzas").submit(function(event) {
         Pizza.prototype.extraCost = function() {
             this.cost+=2}
             //large size calculator
+
             if (cheeseTopping === "Extra Cheese" ) {
             cheese.extraCost() }
 
@@ -64,19 +68,37 @@ $("form#pizzas").submit(function(event) {
                 hawaiian.extraCost() }
 
             if (veggieTopping === "Extra Cheese") {
-                veggie.extraCost() }
+                 (veggie.extraCost() )
+            }
                 //console.log(veggie)
                 //extra toppings calculator
             if (cheeseSize === "Large" ) {
-               cheese.cost+=4 }
-               console.log(cheese)
+               resultArray.push(cheese.cost+=4) }
+             //  console.log(cheese)
 
             if (hawaiianSize === "Large" ) {
-                hawaiian.cost+=4 }
-                console.log(hawaiian)
+                resultArray.push(hawaiian.cost+=4) }
 
             if (veggieSize === "Large" ) {
-                veggie.cost+=4 }
-            //    console.log(veggie)
+                resultArray.push(veggie.cost+=4) }
+
+            if (cheeseSize === "Small" ) {
+                   resultArray.push(cheese.cost+=0) }
+                 //  console.log(cheese)
+
+            if (hawaiianSize === "Small" ) {
+                    resultArray.push(hawaiian.cost+=0) }
+
+
+
+            if (veggieSize === "Small" ) {
+                    resultArray.push(veggie.cost+=0) }
+
+
+                $("#total").append(resultArray)
+                console.log(resultArray)
+
+
             })
+
 });
