@@ -6,16 +6,18 @@
         <script type="text/javascript" src="scripts.js"></script>
         <link rel="stylesheet" href="styles.css">
         <meta charset="utf-8">
-        <title>Pizza Website Name</title>
+        <title>Pizza Ptizza</title>
     </head>
     <body>
-        <p>Welcome to (name) pick your pizza and we will deliver it to you right to your door!</p>
+        <p class="heading"><br> Pizza Ptizza Menue</p>
+        <div class="container">
 
         <form id="pizzas">
+        <span id="cheese">
+        <h5> Cheese </h5>
+        <p class="text"><mark>Mozzarella, Cheddar cheese, Asiago.</mark></p>
 
-        <h3> Cheese </h3>
-
-         <input type="image" src="cheese.jpg" name="pizzaChoice" height ="150" width ="150" id="pizza1" />
+         <input type="image" src="cheese.jpg" name="pizzaChoice" height="180" width ="200" id="pizza1"/>
         <div id="cheeseToppings">
 
             Toppings:
@@ -27,7 +29,7 @@
                 <option value="topping3">Black olives</option>
                 <option value="topping4">Red onions</option>
                 <option value="topping5">Green Peppers</option>
-            </select id="cheeseSize"><br>
+            </select id="cheeseSize"> <br>
             Size:
             <select id ="cheeseSize">
                 <option value="noSize"> </option>
@@ -35,9 +37,11 @@
                 <option value="size">Large</option>
         </select>
         </div>
-
-        <h3> Hawaiian </h3>
-        <input type="image" src="hawaiian.jpg" name="pizzaChoice" id="pizza2" height = "150" width ="150" id="pizza2"/>
+    </span> <br>
+        <span id="hawaiian">
+        <h5> Hawaiian </h5>
+        <p class ="text"><mark>Canadian bacon, pineapple, red onions.</mark></p>
+        <input type="image" src="hawaiian.jpg" name="pizzaChoice" id="pizza2" height ="180" width ="200" id="pizza2"/>
         <div id="hawaiianToppings">
             Toppings:
         <select id="hawaiianTopp">
@@ -56,9 +60,14 @@
             <option value="size">Large</option>
         </select>
         </div>
-
-        <h3>Veggie</h3>
-        <input type="image" src="veggie.jpg" name="pizzaChoice" id="pizza3" height="150" width="150" id="pizza3"/>
+    </span>
+    <br>
+    <br>
+        <span id="veggie">
+        <br><br><br><br> <!--sorry margin top or top properies didn't work--->
+        <h5>Veggie</h5>
+        <p class="text"><mark>Zucchini, olives, spinach, tomatoes, and red peppers.</mark></p>
+        <input type="image" src="veggie.jpg" name="pizzaChoice" id="pizza3" height="180" width="200" id="pizza3"/>
         <div id="veggieToppings">
             Toppings:
         <select id=veggieTopp>
@@ -69,7 +78,7 @@
             <option value="topping3">Black olives</option>
             <option value="topping4">Red onions</option>
             <option value="topping5">Green Peppers</option>
-        </select><br>
+        </select>
             Size:
             <select id="veggieSize">
             <option value="noSize"> </option>
@@ -77,8 +86,13 @@
             <option value="size">Large</option>
         </select>
         </div>
-        <button type="submit"> Order! </button>
-    </form> <br>
-    <span id="total"> Your total is: <br>  </span>
+    </span>
+        <br><button type="submit"> Order! </button>
+        <img src="pizza.png" height="300" width="300">
+    </form>
+    <div class="sidenav">
+    <span id="total"> Total: <br> </span>
+    <br><br><p>Proceed to checkout</em></p>
+    </div>
     </body>
 </html>
