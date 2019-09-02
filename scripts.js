@@ -22,7 +22,6 @@ $(document).ready(function() {
         var hawaiianSize= $("#hawaiianSize option:selected").text();
         var veggieTopping= $("#veggieTopp option:selected").text();
         var veggieSize= $("#veggieSize option:selected").text();
-
 //bussness
         var cheese = new Pizza(cheeseTopping, cheeseSize, 10)
         var hawaiian = new Pizza (hawaiianTopping, hawaiianSize, 10)
@@ -34,7 +33,6 @@ $(document).ready(function() {
 };
         Pizza.prototype.extraCost = function() {
             this.cost+=2}
-
 //extra toppings calculator
         if (cheeseTopping === "Extra Cheese +2" ) {
             cheese.extraCost()
