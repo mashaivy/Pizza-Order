@@ -36,25 +36,25 @@ $(document).ready(function() {
             this.cost+=2}
 
 //extra toppings calculator
-        if (cheeseTopping === "Extra Cheese" ) {
+        if (cheeseTopping === "Extra Cheese +2" ) {
             cheese.extraCost()
  }
 
-        if (hawaiianTopping === "Extra Cheese")  {
+        if (hawaiianTopping === "Extra Cheese +2")  {
             hawaiian.extraCost()
 }
 
-        if (veggieTopping === "Extra Cheese") {
+        if (veggieTopping === "Extra Cheese +2") {
             (veggie.extraCost() )
 }
 //size calculator
-        if (cheeseSize === "Large" ) {
+        if (cheeseSize === "Large +4" ) {
             resultArray.push(cheese.cost+=4)
 }
-        if (hawaiianSize === "Large" ) {
+        if (hawaiianSize === "Large +4" ) {
             resultArray.push(hawaiian.cost+=4)
 }
-        if (veggieSize === "Large" ) {
+        if (veggieSize === "Large +4" ) {
             resultArray.push(veggie.cost+=4)
 }
         if (cheeseSize === "Small" ) {
